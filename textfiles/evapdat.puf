@@ -1,0 +1,18 @@
+c----------------------------------------------------------------------
+c --- COMMON BLOCK /EVAPDAT/ -- Evaporation data              CALPUFF
+c----------------------------------------------------------------------
+c
+      common/EVAPDAT/ev(1,mxspec),idropflg(mxspec)
+c
+c --- COMMON BLOCK /EVAPDAT/ Variables:
+c
+c         EV(1,mxspec) - real   - Array of Evaporation Rates
+c                                 (um2/sec C) for each pollutant
+c                                 [Current AGDISP routines assume
+c                                  a single carrier evaporation rate]
+c
+c     IDROPFLG(mxspec) - integer  - Array of droplet evaporation flags for
+c                                  each pollutant
+c                                    0 = No droplets
+c                                    1 = droplets
+
